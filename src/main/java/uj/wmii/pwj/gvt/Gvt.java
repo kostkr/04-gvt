@@ -48,7 +48,6 @@ public class Gvt {
         if(Files.isDirectory(Path.of(".gvt"))) {
             exitHandler.exit(10, "Current directory is already initialized.");
         }else try {
-
             new File(".gvt" + separator + "0").mkdirs();
             new File(".gvt" + separator + "0" + separator + "message.txt").createNewFile();
 
